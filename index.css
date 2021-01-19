@@ -24,6 +24,7 @@
         background-color: var(--bg-color);
         color:var(--font-light);
         transition: all 500ms;
+        user-select: none;
     }
 
     /* Center the wrapper */
