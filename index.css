@@ -1,0 +1,74 @@
+  /* CSS reset */
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* custom variables */
+    :root{
+        --bg-color: #171923;
+        --font-light: #ffffff; 
+    }
+
+    /* lighmode properties */
+    .lightmode{
+        --bg-color: #ebe9e2;
+        --font-light: #202020;
+    }
+
+    /* body */
+    body{
+        background-color: var(--bg-color);
+        color:var(--font-light);
+        transition: all 500ms;
+    }
+
+    /* Center the wrapper */
+    #wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* center content inside #center */
+    #center{
+        width: 320;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    /* h1 */
+    #center h1{
+        color: rgb(25, 129, 25);
+        text-align: center;
+    }
+
+    /* p */
+    p{
+        padding: 10px;
+    }
+
+    /* button */
+    button{
+        font-size: 20px;
+        padding: 7px;
+        margin-top: 7px;
+        outline: none;
+        border: 3px solid var(--font-light);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /* toggle */
+    #toggle{
+        margin-bottom: 60px;
+        padding: 5px;
+        cursor: pointer;
+    }
